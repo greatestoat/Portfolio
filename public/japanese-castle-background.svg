@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#050407"/>
+      <stop offset=".62" stop-color="#17080d"/>
+      <stop offset="1" stop-color="#050507"/>
+    </linearGradient>
+    <linearGradient id="roof" x2="0" y2="1">
+      <stop stop-color="#4d1d27"/>
+      <stop offset="1" stop-color="#0b0d13"/>
+    </linearGradient>
+    <linearGradient id="wall" x2="0" y2="1">
+      <stop stop-color="#341b22"/>
+      <stop offset="1" stop-color="#100e14"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#e83b4c" stroke-opacity=".2"/></pattern>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <circle cx="800" cy="280" r="190" fill="#d72f46" opacity=".16" filter="url(#glow)"/>
+  <circle cx="800" cy="280" r="120" fill="#ec4b57" opacity=".2"/>
+  <path d="M0 680L260 620 470 700 720 620 960 700 1220 610 1600 680V1000H0Z" fill="#08090d"/>
+  <path d="M0 790L320 700 560 780 820 690 1100 770 1390 680 1600 740V1000H0Z" fill="url(#grid)" opacity=".8"/>
+  <g fill="none" stroke="#e83b4c" stroke-width="3" opacity=".7">
+    <path d="M0 690H260L330 620H560L630 690H960L1040 610H1300L1370 690H1600"/>
+    <path d="M120 850H360L420 790H620M980 820H1190L1270 750H1510"/>
+  </g>
+  <g stroke="#ff5261" stroke-width="5" fill="none" opacity=".9">
+    <path d="M480 690H1120"/><path d="M550 610H1050"/><path d="M640 505H960"/><path d="M710 400H890"/>
+  </g>
+  <g fill="url(#wall)" stroke="#df4656" stroke-width="4">
+    <path d="M380 690H1220L1130 790H470Z"/>
+    <path d="M475 575H1125L1055 690H545Z"/>
+    <path d="M575 470H1025L970 575H630Z"/>
+    <path d="M675 365H925L890 470H710Z"/>
+    <path d="M735 260H865L850 365H750Z"/>
+  </g>
+  <g fill="url(#roof)" stroke="#ff6370" stroke-width="5">
+    <path d="M330 690Q800 560 1270 690L1190 735Q800 645 410 735Z"/>
+    <path d="M440 575Q800 470 1160 575L1090 620Q800 545 510 620Z"/>
+    <path d="M545 470Q800 385 1055 470L990 510Q800 450 610 510Z"/>
+    <path d="M645 365Q800 295 955 365L895 400Q800 350 705 400Z"/>
+    <path d="M700 260Q800 210 900 260L860 290Q800 260 740 290Z"/>
+  </g>
+  <g fill="#53e4dc" opacity=".9" filter="url(#glow)">
+    <rect x="560" y="625" width="22" height="42"/><rect x="625" y="605" width="22" height="42"/><rect x="953" y="605" width="22" height="42"/><rect x="1018" y="625" width="22" height="42"/>
+    <rect x="690" y="500" width="20" height="38"/><rect x="890" y="500" width="20" height="38"/><rect x="750" y="390" width="18" height="34"/><rect x="832" y="390" width="18" height="34"/>
+  </g>
+  <g fill="#ff4858" filter="url(#glow)">
+    <circle cx="800" cy="545" r="13"/><circle cx="800" cy="435" r="10"/><circle cx="800" cy="325" r="8"/>
+  </g>
+  <g fill="none" stroke="#ff5664" stroke-width="6">
+    <path d="M120 560V700M280 560V700M95 570H305M115 535H285"/>
+    <path d="M130 535Q200 480 270 535"/>
+    <path d="M1320 560V700M1480 560V700M1295 570H1505M1315 535H1485"/>
+    <path d="M1330 535Q1400 480 1470 535"/>
+  </g>
+  <g fill="#f34b59" font-family="monospace" font-size="54" opacity=".85">
+    <text x="75" y="180">日本 // CASTLE</text><text x="1260" y="210">01 / 04</text>
+  </g>
+  <g stroke="#ff4859" stroke-width="2" opacity=".55"><path d="M80 220H430M1170 250H1510M70 300H300M1300 330H1530"/></g>
+</svg>
